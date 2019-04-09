@@ -1,0 +1,5 @@
+<!--miniprogram/pages/MORE/myStatistics2/myStatistics2.wxml-->
+<view class="container">
+    <canvas canvas-id="lineCanvas" disable-scroll="true" class="canvas" bindtouchstart="touchHandler"></canvas>
+    <button type="primary" bindtap="updateData">更新数据</button>
+</view>

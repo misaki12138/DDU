@@ -1,0 +1,45 @@
+<view class='container'>
+  <image class='backgroundimg' src='{{backgroundUrl}}' mode='scaleToFill'></image>
+  <view class='title'>
+    <text class='text1'>我的徽章 </text>
+    <text class='text2'>My Badges </text>
+  </view>
+
+  <view class='title_icon'>
+     <button class="function-avatar" style="background-image: url({{avatarUrl}})"></button>
+     <text class="text3">{{nickname}}</text>
+  </view>
+
+  <view class="btn-area">
+    <view class="btn-item">
+      <button class="function-avatar" style="background-image: url({{first?own1:unown1}})"></button>
+      <text class="function-name">第一个</text>
+    </view>
+
+    <view class="btn-item">
+      <button class="function-avatar" style="background-image: url({{second?own2:unown2}})"></button>
+      <text class="function-name">第二个</text>
+    </view>
+
+    <view class="btn-item">
+      <button class="function-avatar" style="background-image: url({{third?own3:unown3}})"></button>
+      <text class="function-name">第三个</text>
+    </view>
+
+    <view class="btn-item">
+      <button class="function-avatar" style="background-image: url({{forth?own4:unown4}})"></button>
+      <text class="function-name">第四个</text>
+    </view>
+
+    <view class="btn-item">
+      <button class="function-avatar" style="background-image: url({{fifth?own5:unown5}})"></button>
+      <text class="function-name">第五个</text>
+    </view>
+
+    <view class="btn-item">
+      <button class="function-avatar" style="background-image: url({{sixth?own6:unown6}})"></button>
+      <text class="function-name">第六个</text>
+    </view>
+  </view>
+
+</view>

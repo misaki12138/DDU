@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.userinfo-avatar {
+  width: 350rpx;
+  height: 350rpx;
+  /* margin: 20rpx; */
+  border-radius: 50%;
+  background-size: cover;
+  background-color: white;
+  position: absolute;
+  bottom: 580rpx;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  position: absolute;
+  bottom: 180rpx;
+  width: 400rpx;
+  height: 100rpx;
+  color: #fff;
+  background-color: #7adbc3;
+}
+

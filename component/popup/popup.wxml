@@ -1,0 +1,16 @@
+<!--component/popup/popup.wxml-->
+<view class="wx-popup" hidden="{{flag}}">
+  <view class='popup-container'>
+    <view class="wx-popup-title">{{title}}</view>
+
+    <view class="wx-popup-body">
+      <view class="wx-popup-btn" bindtap='btnsport'>{{btn_sport}}</view>
+      <view class="wx-popup-btn" bindtap='btnstudy'>{{btn_study}}</view>
+    </view>
+
+    <view class="wx-popup-btncancel">
+      <text bindtap='hidePopup'>{{btn_cancel}}</text>
+    </view>
+
+  </view>
+</view>

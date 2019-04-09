@@ -1,0 +1,117 @@
+/* pages/all/all.wxss */
+.habitview/*按钮*/
+{
+  width: 100%;
+  height: 240rpx;
+  border: soild 3rpx rgb(92, 209, 238);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+    background-color: #d7d7db;
+}
+.habit_container {
+  /* display: inline-block; */
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.habit_finish
+{
+  width: 100%;
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+}
+.habit_progress
+{
+  width: 70%;
+   justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction:row;
+}
+
+/* 习惯养成进度部分 */
+.scroll-item {
+  display: flex;
+  justify-content: center;
+  margin: 30rpx;
+}
+.scroll-view {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 10%;
+  width: 100%;
+  align-self: flex-end;
+}
+.scroll-viewx{
+  width: 100%;
+  height: 140rpx;
+ align-self: flex-end;
+ white-space: nowrap; 
+ display: flex;
+}
+.text{
+  text-align: center;
+}
+.text1
+{
+  margin: 20rpx;
+  text-align: center
+}
+.text2
+{
+  font-size: 34rpx;
+  display: flex;
+  text-align: center;
+}
+.divLine{
+ background: #707272;
+ width: 100%;
+ height: 5rpx;
+ justify-content: center;
+ margin-top: 20rpx;
+ margin-bottom: 20rpx;
+}
+.sv{
+   width:100%;
+   height: 140rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.mission_finish
+{
+  width: 100%;
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  /*background-color: #b8c0ec;*/
+  background-color: #d7d7db;
+}
+.mission_text1
+{
+   display: inline-flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: flex-start;
+  color: white;
+  margin-right: 200rpx;
+}
+.mission_text2
+{
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: flex-end;
+
+}

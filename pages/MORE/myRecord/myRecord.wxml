@@ -1,0 +1,51 @@
+<!--pages/all/all.wxml-->
+<view class='text1'>
+  <text>⚝已经养成的习惯⚝</text>
+</view>
+
+<scroll-view style=" width: 100%;  white-space: nowrap; display: flex;" scroll-x="true">
+
+  <view wx:for="{{finishHabits}}" style="display:inline-block;">
+    <view class="habit_container">
+      <image style=" width: 140.4rpx; height: 140.4rpx; display: flex" src='{{item.imageUrl}}'id='{{index}}' bindtap='chooseFinishHabits'></image>
+    </view>
+  </view>
+
+</scroll-view>
+
+<view class="divLine"></view>
+
+<view class='text '>
+  <view>
+    <text>⚝我的习惯养成进度⚝</text>
+  </view>
+
+  <scroll-view class='scroll-view ' style="height:700rpx;" scroll-y="true">
+    <view class='scroll-item ' wx:for="{{unFinishHabits}}">
+      <button class='habitview '>
+        <text>{{item.hname}}({{item.sign_days}}/{{item.days}})</text>
+        <view class='habit_finish '>
+          <image style=" width: 140.4rpx; height: 140.4rpx; " src='{{item.imageUrl}} 'wx:if="{{item.imageUrl.length>0}}" />
+          <progress class='habit_progress ' percent="{{item.pecent}}" stroke-width="18" color="#7C89D1" active show-info />
+          <!--进度条-->
+        </view>
+      </button>
+      <!--<progress percent="{{index}}" show-info/>动态设置进度条-->
+    </view>
+
+  </scroll-view>
+
+  <view class="divLine"></view>
+
+</view>
+<view class='text '>
+  <text>⚝已完成的任务⚝</text>
+</view>
+<scroll-view class='scroll-view ' style="height:700rpx; display: flex;" scroll-y="true">
+  <view class='scroll-item ' wx:for="{{finishMissions}}">
+    <button class='mission_finish ' id='{{index}}' bindtap='chooseFinishMission'>
+      <text class='mission_text1 '>{{item.event}}</text>
+      <text class='mission_text2 '>{{item.hour}}h{{item.minute}}m{{item.second}}s</text>
+    </button>
+  </view>
+</scroll-view>

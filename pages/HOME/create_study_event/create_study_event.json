@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "select": "/component/select/select"
+  },
+  "navigationBarTitleText": "选择学习项目"
+}

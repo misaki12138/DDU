@@ -1,0 +1,17 @@
+<view class='container'>
+  <image class='bg-image' src='{{imageUrl}}' mode='scaleToFill' />
+  <button class='timebtn'>{{today}}
+  </button>
+
+  <button class="btn1" bindtap='getup' opentype='opensetting' disabled='{{disabled}}' 
+          style='background-image:url({{hadPunched?buttonUrl2:buttonUrl1}})' />
+  <button class="btn2" bindtap='mission' opentype='opensetting' />
+  <button class="btn3" bindtap='habit' opentype='opensetting' />
+  <text class="text2">{{hadPunched ? "打卡完成" : "早起打卡"}}</text>
+  <text class="text1">新建任务</text>
+  <text class="text3">新建习惯</text>
+</view>
+
+<view>
+  <popup id='popup' title='选择类别' btn_sport='运动' btn_study='学习' bind:error="popup_error" bind:success="popup_success" />
+</view>

@@ -1,0 +1,92 @@
+/* pages/mybadge/mybadge.wxss */
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.backgroundimg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.title{
+  position: absolute;
+  left: 30rpx;
+  top: 80rpx;
+  font-size: 60rpx;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+.text1{
+  position: relative;
+  /* left: 35rpx; */
+}
+.text2{
+  color: rgb(107, 9, 9);
+  font-size: 40rpx;
+}
+.text3{
+  color: white;
+  position: relative;
+  
+}
+.title_icon{
+  position: absolute;
+  top: 80rpx;
+  left: 550rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+.icon_img{
+  height: 250rpx;
+  width: 250rpx;
+}
+
+.btn-area {
+  position: absolute;
+  top: 400rpx;
+  margin-top: 180rpx;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  /* height: 80%; */
+  width: 90%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.btn-item {
+  height: 200rpx;
+  margin: 20rpx;
+ 
+  border-left: none;
+  border-right: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 300ms ease;
+}
+.function-avatar {
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+  background-size: cover;
+
+}
+.function-avatar::after {
+  border: none;
+}
+.function-name {
+  /* margin-top: 10rpx; */
+  font-size: 30rpx;
+  color: white;
+
+  background-size: cover;
+}
+.function-name::after {
+  border: none;
+}

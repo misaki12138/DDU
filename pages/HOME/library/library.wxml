@@ -1,0 +1,34 @@
+<!--miniprogram/pages/library/library.wxml-->
+<view class="container">
+  <view class="timer_blank"></view>
+  <view class="timer_container">
+    <view class="timer_time_wrap">
+      <view class="timer_progress_mask"></view>
+      <!-- 左边的进度条 -->
+      <view class="timer_progress timer_left">
+        <view class="timer_circle timer_circle--left" style="transform: rotate({{leftDegree}}deg);"></view>
+      </view>
+      <!-- 右边的进度条 -->
+      <view class="timer_progress timer_right">
+        <view class="timer_circle timer_circle--right" style="transform: rotate({{rightDegree}}deg);"></view>
+      </view>
+
+      <view class="timer_content">
+        <!-- 倒计时字符显示 -->
+        <text class="timer_time" wx:if="{{!completed}}">{{remainTimeText}}</text>
+        <!-- 任务名称 -->
+        <text class="timer_taskName">{{completed ? 'FINISH' : event}}</text>
+      </view>
+    </view>
+  </view>
+
+  <view class="timer_footer">
+    <view bindtap="startTimer" data-type="work" class="timer_ctrl">
+      {{isRunning ? (completed? '完成' : '停止') : '开始'}}
+    </view>
+    <view wx:if="{{isRunning && !completed}}" bindtap="breakTimer" data-type="work" class="timer_ctrl">
+      {{isBreaking ? '继续' : '暂停'}}
+    </view>
+  </view>
+
+</view>

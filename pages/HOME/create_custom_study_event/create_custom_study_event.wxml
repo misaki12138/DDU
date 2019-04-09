@@ -1,0 +1,26 @@
+<view class="container">
+  
+  <canvas class='canvasc' canvas-id='mycanvas1' style='width:702rpx;height:936rpx'></canvas>
+
+  <view class="event_view">
+    <text class="event_title"> 名 称 </text>
+    <input 
+      class="event_input" 
+      auto-focus='true' 
+      bindinput='nameinput'
+      placeholder-style="text-align:center; color: #5fbea6;"
+      placeholder="给您的任务取个名字吧" ></input>
+  </view>
+
+  <view class="time_view">
+    <text class="time_title"> 时 间 </text>
+    <picker mode="time" value="{{mission_time_length}}" start="00:01" end="23:59" bindchange="bindTimeChange">
+      <view class="time_selector">{{mission_time_length}}:00</view>
+    </picker>
+  </view>
+
+  <view>
+    <button class="submit" bindtap="submit" opentype='opensetting' disabled="{{disabled}}">提交</button>
+  </view>
+  
+</view>

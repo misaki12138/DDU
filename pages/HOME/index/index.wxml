@@ -1,0 +1,4 @@
+<view class="container">
+  <button class="userinfo-avatar" style="background-image: url({{imageUrl}})"></button>
+  <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo" class="login"> 登 录 </button>
+</view>

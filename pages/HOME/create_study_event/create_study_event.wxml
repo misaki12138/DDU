@@ -1,0 +1,13 @@
+<view class="container">
+  <view>
+    <view class="text1">选择一个推荐的项目</view>
+    <select class="select" prop-array='{{selectArray}}' bind:myget='getDate'></select>
+  </view>
+
+  <view>
+    <view class="text2">没有找到喜欢的项目？那来自定义一个吧！</view>
+    <button class="btn1" bindtap="custom_event" opentype='opensetting' disabled="{{disabled}}">自定义任务</button>
+  </view>
+
+  <button class="btn2" bindtap="start_event" opentype='opensetting' disabled="{{disabled}}">开始任务</button>
+</view>

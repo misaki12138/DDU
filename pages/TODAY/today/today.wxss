@@ -1,0 +1,29 @@
+
+.main{
+  display: flex;
+  flex-direction: column;
+}
+.container{
+  display: flex;
+}
+.text1{
+  border: 2px;
+  text-align: center;
+  font-size: 60rpx;
+  margin: 50rpx;
+}
+.btn{
+  width: 90%;
+  height: 100rpx;
+  margin: 10rpx;
+  border-radius: 20rpx;
+  border-width: 4rpx;
+
+  border-color: rgb(221, 221, 221);
+  display: flex;
+}
+.img{
+  width: 90rpx;
+  height: 90rpx;
+  margin-right: 350rpx;
+}

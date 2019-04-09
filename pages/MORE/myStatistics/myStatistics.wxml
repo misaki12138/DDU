@@ -1,0 +1,1 @@
+<ec-canvas id="mychart" canvas-id="mychart-line" ec="{{ ec }}"></ec-canvas>

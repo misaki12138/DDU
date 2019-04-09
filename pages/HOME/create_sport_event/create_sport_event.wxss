@@ -1,0 +1,76 @@
+/* miniprogram/pages/create_sport_event/create_sport_event.wxss */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.text1 {
+  height: 100px;
+  width: 100%;
+  font-size: 46.8rpx;
+  line-height: 350rpx; /** 垂直居中 **/
+  text-align: center; /** 水平居中 **/
+  position: absolute;
+  top: 0rpx;
+  left: 0rpx;
+}
+
+.select {
+  position: absolute;
+  top: 240rpx;
+  left: 140rpx;
+}
+
+.text2 {
+  height: 80px;
+  width: 100%;
+  font-size: 32.76rpx;
+  color: #b8b5b5;
+  line-height: 200rpx; /** 垂直居中 **/
+  text-align: center; /** 水平居中 **/
+  position: absolute;
+  top: 400rpx;
+  left: 23.4rpx;
+}
+
+.btn1 {
+  height: 80rpx;
+  width: 260rpx;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 39.78rpx;
+  color: #5fbea6;
+  box-shadow: 9.36rpx 14.04rpx 23.4rpx 4.68rpx #ddd;
+  border-color: #5fbea6;
+  border: 4.68rpx;
+  border-radius: 88rpx;
+  border-width: 5rpx;
+  position: absolute;
+  top: 530rpx;
+  left: 240rpx;
+}
+
+.btn2 {
+  height: 200rpx;
+  width: 200rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-shadow: 9.26rpx 14.04rpx 23.4rpx 4.68rpx #ddd;
+  border: 0rpx;
+  border-radius: 200rpx;
+  border-width: 0rpx;
+  border-style: #fff;
+  color: #fff;
+  background-color: #5fbea6;
+  font-size: 32rpx;
+  position: absolute;
+  bottom: 200rpx;
+}

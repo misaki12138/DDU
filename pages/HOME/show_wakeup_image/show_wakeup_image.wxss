@@ -1,0 +1,11 @@
+
+.container {
+  display: flex;
+  background-color: red;
+}
+
+.bg-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}

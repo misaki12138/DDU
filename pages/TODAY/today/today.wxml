@@ -1,0 +1,14 @@
+<!--pages/other/other.wxml-->
+<view class='main'>
+  <text class='text1'>我的习惯</text>
+  <view class='container' wx:for="{{array}}">
+
+    <button class='btn' bindtap='btnclick' id='{{index}}' disabled='{{item.disabled}}'>
+
+      <image class='img' src='{{item.imageurl}}'></image>
+      <text class='text2'>{{item.name}}</text>
+      
+    </button>
+
+  </view>
+</view>

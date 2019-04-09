@@ -1,0 +1,27 @@
+<view class="container">
+
+  <!-- 用户信息 -->
+  <view class="userinfo">
+    <button class="userinfo-avatar" open-type="getUserInfo" bindgetuserinfo="onGetUserInfo" style="background-image: url({{avatarUrl}})"></button>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </view>
+
+  <view class="btn-area">
+    <view class="btn-item">
+      <button class="function-avatar" bindtap="show_mybadge" style="background-image: url({{myBadgeUrl}})"></button>
+      <text class="function-name">我的徽章</text>
+    </view>
+
+    <view class="btn-item">
+      <button class="function-avatar" bindtap="show_myrecord" style="background-image: url({{myRecordUrl}})"></button>
+      <text class="function-name">我的记录</text>
+    </view>
+
+    <view class="btn-item">
+      <button class="function-avatar" bindtap="show_mystatistics" style="background-image: url({{myStatisticsUrl}})"></button>
+      <text class="function-name">月度报告</text>
+    </view>
+  </view>
+
+
+</view>

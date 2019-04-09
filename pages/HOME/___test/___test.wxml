@@ -1,0 +1,104 @@
+<!--pages/all/all.wxml-->
+<view class='text1'>
+  <text>已经养成的习惯</text>
+</view>
+
+<scroll-view style=" width: 100%;  white-space: nowrap; display: flex;" scroll-x="true">
+  <!--bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-left="{{scrollTop}}">-->
+
+  <view style="display:inline-block;">
+    <view class="habit_container">
+      <image style=" width: 140.4rpx; height: 140.4rpx; display: flex" src='{{imageurl1}}'></image>
+      <text class='text2'>跑步</text>
+    </view>
+  </view>
+  <view style="display: inline-block">
+    <image style=" width: 140.4rpx; height: 140.4rpx; display: flex" src='{{imageurl1}}'>
+    </image>
+    <text class='text2'>跑步</text>
+  </view>
+  <!--<image class='bimg' src='{{imageUrl1}}' /></view>-->
+  <view style="background: green; width: 140.4rpx; height: 140.4rpx; display: inline-block"> </view>
+  <view style="background: blue; width:140.4rpx; height: 140.4rpx; display: inline-block"></view>
+  <view style="background: yellow; width: 140.4rpx; height: 140.4rpx; display: inline-block"></view>
+  <view style="background: red; width:140.4rpx; height: 140.4rpx; display: inline-block"></view>
+  <view style="background: green; width:140.4rpx; height: 140.4rpx; display: inline-block"></view>
+  <view style="background: blue; width: 140.4rpx; height: 140.4rpx; display: inline-block"></view>
+  <view style="background: yellow; width: 140.4rpx; height: 140.4rpx; display: inline-block"></view>
+</scroll-view>
+
+<view class="divLine"></view>
+
+<view class='text'>
+  <view>
+    <text>我的习惯养成进度</text>
+  </view>
+
+  <scroll-view class='scroll-view' style="height:700rpx;" scroll-y="true">
+    <view class='scroll-item'>
+      <button class='habitview'>
+        <text>show-info</text>
+        <view class='habit_finish'>
+          <image style=" width: 140.4rpx; height: 140.4rpx; " src='{{imageurl1}}' />
+          <progress class='habit_progress' percent="50" stroke-width="18" color="red" active show-info />
+        </view>
+      </button>
+      <!--<progress percent="{{index}}" show-info/>动态设置进度条-->
+    </view>
+    <view class="tui-menu-list" style='margin:30rpx;'>
+      <text>show-info在进度条右侧显示百分比</text>
+      <progress percent="50" stroke-width="18" color="red" active show-info />
+      <!--<progress percent="{{index}}" show-info/>动态设置进度条-->
+    </view>
+    <view class="tui-menu-list" style='margin:30rpx;'>
+      <text>show-info在进度条右侧显示百分比</text>
+      <progress percent="50" stroke-width="18" color="red" active show-info />
+      <!--<progress percent="{{index}}" show-info/>动态设置进度条-->
+    </view>
+    <view class="tui-menu-list" style='margin:30rpx;'>
+      <text>show-info在进度条右侧显示百分比</text>
+      <progress percent="50" stroke-width="18" color="red" active show-info />
+      <!--<progress percent="{{index}}" show-info/>动态设置进度条-->
+    </view>
+    <view class="tui-menu-list" style='margin:30rpx;'>
+      <text>show-info在进度条右侧显示百分比</text>
+      <progress percent="50" stroke-width="18" color="red" active show-info />
+      <!--<progress percent="{{index}}" show-info/>动态设置进度条-->
+    </view>
+    <view class="tui-menu-list" style='margin:30rpx;'>
+      <text>show-info在进度条右侧显示百分比</text>
+      <progress percent="50" stroke-width="18" color="red" active show-info />
+      <!--<progress percent="{{index}}" show-info/>动态设置进度条-->
+    </view>
+    <view class="tui-menu-list" style='margin:30rpx;'>
+      <text>show-info在进度条右侧显示百分比</text>
+      <progress percent="50" stroke-width="18" color="red" active show-info />
+      <!--<progress percent="{{index}}" show-info/>动态设置进度条-->
+    </view>
+  </scroll-view>
+  <view class="divLine"></view>
+</view>
+<view class='text'>
+  <text>已完成的任务</text>
+</view>
+<scroll-view class='scroll-view' style="height:700rpx; display: flex;margin:30rpx;" scroll-y="true">
+  <!--bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-left="{{scrollTop}}">-->
+  <!--<image class='bimg' src='{{imageUrl1}}' /></view>-->
+  <view class="tui-menu-list" style='margin:30rpx;'>
+    <text>show-info在进度条右侧显示百分比</text>
+    <progress percent="50" stroke-width="18" color="red" active show-info />
+    <!--<progress percent="{{index}}" show-info/>动态设置进度条-->
+  </view>
+  <view class="tui-menu-list" style='margin:30rpx;'>
+    <text>show-info在进度条右侧显示百分比</text>
+    <progress percent="50" stroke-width="18" color="red" active show-info />
+    <!--<progress percent="{{index}}" show-info/>动态设置进度条-->
+  </view>
+  <view class="tui-menu-list" style='margin:30rpx;'>
+    <text>show-info在进度条右侧显示百分比</text>
+    <progress percent="50" stroke-width="18" color="red" active show-info />
+    <!--<progress percent="{{index}}" show-info/>动态设置进度条-->
+
+
+  </view>
+</scroll-view>

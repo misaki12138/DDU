@@ -1,0 +1,56 @@
+{
+  "pages": [
+    "pages/HOME/index/index",
+    "pages/MORE/myStatistics2/myStatistics2",
+    
+    "pages/HOME/home/home",
+    "pages/HOME/___test/___test",
+    "pages/TODAY/today/today",
+    "component/popup/popup",
+    "component/select/select",
+    "pages/HOME/library/library",
+    "pages/HOME/create_custom_habit/create_custom_habit",
+    "pages/HOME/create_custom_study_event/create_custom_study_event",
+    "pages/HOME/create_custom_sport_event/create_custom_sport_event",
+    "pages/HOME/create_study_event/create_study_event",
+    "pages/HOME/create_sport_event/create_sport_event",
+    "pages/HOME/show_wakeup_image/show_wakeup_image",
+    "pages/MORE/more/more",
+    "pages/MORE/myBadge/myBadge",
+    "pages/MORE/myRecord/myRecord",
+    "pages/MORE/myStatistics/myStatistics"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "Day Day Up",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#9E9B9B",
+    "selectedColor": "#1589EB",
+    "backgroundColor": "#F6F6F6",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/HOME/home/home",
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/home.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/TODAY/today/today",
+        "iconPath": "images/message.png",
+        "selectedIconPath": "images/message.png",
+        "text": "今天"
+      },
+      {
+        "pagePath": "pages/MORE/more/more",
+        "iconPath": "images/user.png",
+        "selectedIconPath": "images/user.png",
+        "text": "更多"
+      }
+    ]
+  }
+}

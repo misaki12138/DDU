@@ -1,0 +1,67 @@
+<!--pages/create_custom_habit/create_custom_habit.wxml-->
+<view class='container'>
+
+  <view class="event_name">
+    <input class="input_evnet" auto-focus='true' bindinput='nameinput' 
+      placeholder-style="text-align:center; color: #b8b5b5;"
+      placeholder="给习惯起个名字吧" ></input>
+  </view>
+
+  <view class="notice">
+    <input class="input_notic" auto-focus='true' bindinput='remarksinput' 
+      placeholder-style="text-align:center; color: #b8b5b5;"
+      placeholder="备注可选填" ></input>
+  </view>
+
+  <view class="time_select">
+    <text>选择天数：</text>
+    <picker bindchange="bindDaysChange" value="{{daysIndex}}" range="{{daysArray}}">
+      <view>{{days}} 天</view>
+    </picker>
+  </view>
+
+  <view>
+    <button class='btncolor1' bindtap='choosecolor' id='3' />
+    <button class='btncolor2' bindtap='choosecolor' id='5' />
+    <button class='btncolor3' bindtap='choosecolor' id='6' />
+    <button class='btncolor4' bindtap='choosecolor' id='4' />
+    <button class='btncolor5' bindtap='choosecolor' id='1' />
+    <button class='btncolor6' bindtap='choosecolor' id='2' />
+  </view>
+
+  <view class='sv'>选择您的习惯小图标</view>
+
+  <scroll-view class='scroll-view' style="white-space: nowrap; display: flex; scrollTop:400rpx; overflow:auto;" scroll-x="true">
+    <!--bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-left="{{scrollTop}}">-->
+    <view style=" width: 140.4rpx; height: 140.4rpx; display: inline-block">
+      <image class='bimg' src='{{imageUrl1}}' bindtap='chooseindex' id='1' />
+    </view>
+    <view style=" width: 140.4rpx; height: 140.4rpx; display: inline-block">
+      <image class='bimg' src='{{imageUrl2}}' bindtap='chooseindex' id='2' />
+    </view>
+    <view style=" width:140.4rpx; height: 140.4rpx; display: inline-block">
+      <image class='bimg' src='{{imageUrl3}}' bindtap='chooseindex' id='3' />
+    </view>
+    <view style=" width: 140.4rpx; height: 140.4rpx; display: inline-block">
+      <image class='bimg' src='{{imageUrl4}}' bindtap='chooseindex' id='4' />
+    </view>
+    <view style=" width:140.4rpx; height: 140.4rpx; display: inline-block">
+      <image class='bimg' src='{{imageUrl5}}' bindtap='chooseindex' id='5' />
+    </view>
+    <view style=" width:140.4rpx; height: 140.4rpx; display: inline-block">
+      <image class='bimg' src='{{imageUrl6}}' bindtap='chooseindex' id='6' />
+    </view>
+    <view style=" width: 140.4rpx; height: 140.4rpx; display: inline-block">
+      <image class='bimg' src='{{imageUrl7}}' bindtap='chooseindex' id='7' />
+    </view>
+    <view style=" width: 140.4rpx; height: 140.4rpx; display: inline-block">
+      <image class='bimg' src='{{imageUrl8}}' bindtap='chooseindex' id='8' />
+    </view>
+  </scroll-view>
+
+  <button class='btnfinish' bindtap='insert_habit'>创建习惯</button>
+  <view style=" width: 140.4rpx; height: 140.4rpx; display: inline-block">
+    <image class='bimg' src='{{imageUrl9}}' id='8' />
+  </view>
+
+</view>

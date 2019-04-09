@@ -1,0 +1,74 @@
+
+.wx-popup {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.popup-container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 80%;
+  height: 35%;
+  max-width: 600rpx;
+  border: 2rpx hidden #ccc;
+  border-radius: 10rpx;
+  box-sizing: border-box;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  background: #fff;
+}
+
+.wx-popup-title {
+  width: 100%;
+  padding-top: 10rpx;
+  padding-bottom: 20rpx;
+  text-align: center;
+  font-size: 40rpx;
+  border-bottom: 2rpx solid#ffffff;
+  color: #fff;
+  background-color: #5fbea6;
+}
+
+.wx-popup-body {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30rpx;
+  margin-bottom: 50rpx;
+}
+
+.wx-popup-btn {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  width: 135rpx;
+  height: 135rpx;
+  border: 2rpx solid #5fbea6;
+  border-radius: 100rpx;
+  color: #fff;
+  background-color: #5fbea6;
+}
+
+.wx-popup-btncancel {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 0rpx;
+}
+
+.wx-popup-btncancel text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 39rpx;
+  color: #5fbea6;
+  background-color: #fff;
+  border: 2rpx solid #fff;
+  position: absolute;
+  left: 260rpx;
+  top: 250rpx;
+}

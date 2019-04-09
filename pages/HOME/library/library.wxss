@@ -1,0 +1,145 @@
+/* miniprogram/pages/library/library.wxss */
+/* 如此可以让进度条显示完全 */
+view {
+  box-sizing: border-box;
+}
+
+.container {
+	display: flex;
+	height: 100%;
+	width: 100%;
+	flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10rpx 0;
+  overflow: hidden;
+}
+
+/* 按钮部分 */
+.timer_footer {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all .3s;
+  bottom: 80rpx;
+  z-index: 10;
+}
+.timer_ctrl {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 32.76rpx;
+  color: #fff;
+
+  width: 150rpx;
+  /* height: 50px; */
+  /* margin: 0 20px; */
+  /* border-radius: 50%; */
+  height: 75rpx;
+  border-radius: 75rpx;
+
+  margin-left: 30rpx; 
+  margin-bottom: 117rpx;
+
+  
+  border: 1px dashed #5fbea6;
+
+  transition: all .7s;
+  background-color: #1589eb;
+}
+
+/* 倒计时顶部空白 */
+.timer_blank {
+  display: flex;
+  justify-content: center;
+  padding: 60rpx;
+}
+
+/* 倒计时主体 */
+.timer_container {
+  position: relative;
+  display: flex;
+  flex: 2;
+  transition: all .5s;
+  z-index: 1;
+}
+.timer_time_wrap {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 702rpx;
+  height: 702rpx;
+  transition: all .3s;
+}
+
+/* 倒计时进度条 */
+.timer_progress_mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border: 3px solid #1589eb;
+  opacity: .5;
+  border-radius: 50%;
+}
+.timer_progress {
+  position: absolute;
+  top: 0;
+  width: 351rpx;
+  height: 702rpx;
+  overflow: hidden;
+  transition: all .3s;
+}
+.timer_left {
+  left: 0;
+}
+.timer_right {
+  right: 0;
+}
+.timer_circle {
+  position: absolute;
+  top: 0;
+  width: 702rpx;
+  height: 702rpx;
+  border: 7.02rpx solid transparent;
+  border-radius: 50%;
+  transition: all .3s;
+}
+.timer_circle--left {
+  left: 0;
+  border-left: 7.02rpx solid #1589eb;
+  border-bottom: 7.02rpx solid #1589eb;
+  /* transform: rotate(45deg); */
+}
+.timer_circle--right {
+  right: 0;
+  border-right:7.02rpx solid #1589eb;
+  border-bottom: 7.02rpx solid #1589eb;
+  /* transform: rotate(-45deg); */
+}
+
+/* 倒计时内容显示 */
+.timer_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.timer_time {
+  position: relative;
+  font-size: 93.6rpx;
+  color: #1589eb;
+  font-weight: lighter;
+  transition: font-size .3s;
+}
+.timer_taskName {
+  position: relative;
+  padding: 100rpx;
+  font-size: 16px;
+  letter-spacing: 3px;
+  color: #000;
+}

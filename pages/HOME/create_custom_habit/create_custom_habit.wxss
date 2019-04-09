@@ -1,0 +1,153 @@
+/* pages/create_custom_habit/create_custom_habit.wxss */
+
+.text1 {
+  color: #5fbea6;
+  font-size: 45rpx;
+  position: absolute;
+  top: 20%;
+  left: 270rpx;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.event_name {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  top: 35%;
+  color: #5fbea6;
+  font-size: 42.12rpx;
+}
+.input_evnet {
+  text-align: center;
+}
+
+.notice {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  top: 45%;
+  color: #5fbea6;
+  font-size: 40rpx;
+}
+.input_notic {
+  text-align: center;
+}
+
+.time_select {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  top: 55%;
+  color: #5fbea6;
+  font-size: 40rpx;
+}
+
+.button {
+  margin: 20rpx;
+}
+
+.scroll-view {
+  width: 100%;
+  align-self: flex-end;
+}
+
+.sv {
+  color: #5fbea6;
+  font-size: 42.12rpx;
+  
+  width: 100%;
+  /* display: flex;
+  text-align: center;
+  flex-direction: row;
+  justify-content: flex-start; */
+  margin-left: 50rpx;
+  margin-top: 20rpx;
+}
+
+.btncolor1 {
+  position: absolute;
+  top: 70%;
+  left: 10%;
+  background-color: #f9b1b1;
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 100rpx;
+  text-align: center;
+}
+
+.btncolor2 {
+  position: absolute;
+  top: 70%;
+  left: 25%;
+  background-color: #7c89d1;
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 100rpx;
+  text-align: center;
+}
+
+.btncolor3 {
+  position: absolute;
+  top: 70%;
+  left: 40%;
+  background-color: #f9ec6f;
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 100rpx;
+  text-align: center;
+}
+
+.btncolor4 {
+  position: absolute;
+  top: 70%;
+  left: 55%;
+  background-color: #8bdfca;
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 100rpx;
+  text-align: center;
+}
+
+.btncolor5 {
+  position: absolute;
+  top: 70%;
+  left: 70%;
+  background-color: #efb672;
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 100rpx;
+  text-align: center;
+}
+
+.btncolor6 {
+  position: absolute;
+  top: 70%;
+  left: 85%;
+  background-color: #9c9696;
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 100rpx;
+  text-align: center;
+}
+
+.btnfinish {
+  position: absolute;
+  top: 80%;
+  left: 35%;
+  color: white;
+  background-color: #8bdfca;
+  width: 250rpx;
+  height: 100rpx;
+  border-radius: 100rpx;
+  text-align: center;
+}
+
+.bimg {
+  position: absolute;
+  width: 140.4rpx;
+  height: 140.4rpx;
+}
